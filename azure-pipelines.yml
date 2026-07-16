@@ -22,4 +22,4 @@ steps:
 - task: CmdLine@2
   displayName: Curl Example
   inputs:
-    script: 'curl -vv --location --insecure --request POST ''https://app-staging.apiiro.com/rest-api/v1/BuildScan/builds'' -data $(playground-payload) -H "Authorization: Bearer $(playground-token)" -H "Content-Type: application/json"'
+    script: 'curl -vv --location --insecure --request POST https://app-staging.apiiro.com/rest-api/v1/BuildScan/builds -data $(playground-payload) -H "Authorization: Bearer $(playground-token)" -H "Content-Type: application/json"'
