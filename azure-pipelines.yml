@@ -18,3 +18,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script now'
+
+- task: CmdLine@2
+  displayName: Curl Example
+  inputs:
+    script: 'curl -vv --location --insecure --request POST ''https://app-staging.apiiro.com/rest-api/v1/BuildScan/builds'' -data "$(playground-payload)" -H "Authorization: Bearer $(echo $(playground-token)" -H ''Content-Type: application/json'''
