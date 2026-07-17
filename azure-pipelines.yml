@@ -20,6 +20,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script now'
+  env:
+    # Map the UI secret variable $(mySecret) to an environment variable
+    MY_MAPPED_SECRET: ohmy
 
 - task: ApiiroBot@0
   inputs:
