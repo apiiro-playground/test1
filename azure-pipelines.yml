@@ -1,5 +1,6 @@
 # Starter pipeline
 
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 #test comment 2
@@ -21,5 +22,9 @@ steps:
   displayName: 'Run a multi-line script now'
 
 - task: ApiiroBot@0
+  inputs:
+    Apiiro: 'Apiiro Staging'
+
+- task: ApiiroBuildScanTask@0
   inputs:
     Apiiro: 'Apiiro Staging'
