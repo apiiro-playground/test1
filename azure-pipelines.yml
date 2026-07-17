@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 #test comment 2
@@ -19,7 +20,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script now'
 
-- task: CmdLine@2
-  displayName: Curl Example
+
+- task: ApiiroBot@0
   inputs:
-    script: 'curl -vv --location --insecure --request POST https://app-staging.apiiro.com/rest-api/v1/BuildScan/builds --data $(playground-payload) -H "Authorization: Bearer $(playground-token)" -H "Content-Type: application/json"'
+    Apiiro: 'Apiiro Staging'
